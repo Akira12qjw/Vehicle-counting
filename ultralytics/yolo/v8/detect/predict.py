@@ -29,7 +29,7 @@ object_counter = {}
 
 object_counter1 = {}
 
-line = [(100, 500), (1050, 500)]
+line = [(5, 500), (2050, 500)]
 def init_tracker():
     global deepsort
     cfg_deep = get_config()
@@ -181,7 +181,7 @@ def draw_boxes(img, bbox, names,object_id, identities=None, offset=(0, 0)):
         color = compute_color_for_labels(object_id[i])
         obj_name = names[object_id[i]]
         label = '{}{:d}'.format("", id) + ":"+ '%s' % (obj_name)
-
+ 
         # add center to buffer
         data_deque[id].appendleft(center)
         if len(data_deque[id]) >= 2:
@@ -318,3 +318,7 @@ def predict(cfg):
 
 if __name__ == "__main__":
     predict()
+
+
+#Running
+# python predict.py model=yolov8l.pt source="test3.mp4" show=True
