@@ -1,0 +1,19 @@
+Đếm tay: 
+Medium
+Car: 11  100%
+Bus: 1 
+Truck: 90%
+Bycycle: 100%
+MOto: 40 85% 
+
+Low
+Car: 
+Bus: 
+Truck: 
+Bycycle:
+MOto: 90%
+
+High
+MoTo: 80%
+Bus: 1 100%
+
